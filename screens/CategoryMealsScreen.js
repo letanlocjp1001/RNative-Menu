@@ -29,16 +29,11 @@ const CategoryMealsScreen = (props) => {
 }
 
 CategoryMealsScreen.navigationOptions = (navigationData) => {
-  // console.log(navigationData)
   const catId = navigationData.navigation.getParam('categoryId')
-  selectedCategory = CATEGORIES.find((cat) => cat.id === catId)
+  const selectedCategory = CATEGORIES.find((cat) => cat.id === catId)
 
   return {
     headerTitle: selectedCategory.title,
-    headerStyle: {
-      backgroundColor: Platform.OS === 'android' ? Colors.primaryColor : '',
-    },
-    headerTintColor: Platform.OS === 'android' ? 'white' : Colors.primaryColor,
   }
 }
 
