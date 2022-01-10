@@ -13,7 +13,12 @@ const CategoryMealsScreen = (props) => {
         affirdability={itemData.item.affirdability}
         image={itemData.item.imageUrl}
         onSelectMeal={() => {
-          props.navigation.navigate({ routeName: 'MealDetail' })
+          props.navigation.navigate({
+            routeName: 'MealDetail',
+            params: {
+              mealId: itemData.item.id,
+            },
+          })
         }}
       />
     )
