@@ -56,6 +56,9 @@ const styles = StyleSheet.create({
 
   mealHeader: {
     height: '85%',
+    marginHorizontal: 10,
+    borderRadius: 10,
+    overflow: 'hidden',
   },
   mealDetail: {
     paddingHorizontal: 10,
