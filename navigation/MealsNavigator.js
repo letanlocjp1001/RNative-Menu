@@ -35,6 +35,24 @@ const MealsNavigator = createStackNavigator(
     },
   }
 )
+
+createStackNavigator(
+  {
+    Favorites: FavoritesScreen,
+    MealDetail: MealDetailScreen,
+  },
+  {
+    // initialRouteName: 'Categories',
+    defaultNavigationOptions: {
+      headerStyle: {
+        backgroundColor: Platform.OS === 'android' ? Colors.primaryColor : '',
+      },
+      headerTintColor:
+        Platform.OS === 'android' ? 'white' : Colors.primaryColor,
+    },
+  }
+)
+
 const tabScreenConfig = {
   Meals: {
     screen: MealsNavigator,
