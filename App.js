@@ -10,8 +10,8 @@ enableScreens()
 
 const fetchFonts = () => {
   return Font.loadAsync({
-    'open-san': require('./assets/fonts/OpenSans-Regular.ttf'),
-    'open-san-bold': require('./assets/fonts/OpenSans-Bold.ttf'),
+    'open-sans': require('./assets/fonts/OpenSans-Regular.ttf'),
+    'open-sans-bold': require('./assets/fonts/OpenSans-Bold.ttf'),
   })
 }
 
